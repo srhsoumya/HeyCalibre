@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HeyCalibre</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+.container{background-color:#152D51;}
+.bold{text-align:center;font-size:45px;font-weight:bold;color:white;}
+.bld{text-align:center;font-size:20px;font-weight:bold;color:white;}
+.btn{color:white;text-align:center;font-size:15px;background-color:#fcdf18;width:75%;position:relative;left:12.5%;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  min-height:400px;
+position:relative;left:10%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  color:#152D51
+  padding: 80px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffc0cb;
+}
+.img{margin-left:40%;}
+
+@media(min-width:800px)
+{.container{width:43%;float:left;min-height:485px;max-height:486px;padding-left:2%;margin-left:3%;font-size:50px;}
+.table{width:49%;float:left;padding-left:4%;min-height:494px;max-height:500px;margin-right:2%;}
+.img{margin-left:10%;}
+.corner1{width:18%;float:left;min-height:384px;max-height:384px;}
+.corner2{width:18%;float:left;min-height:384px;max-height:384px;}
+.corner3{width:18%;float:left;min-height:384px;max-height:384px;}
+.corner4{width:18%;float:left;min-height:384px;max-height:384px;}
+.stu{width:27%;margin-left:3%;float:left;}}
+
+@media(max-width:799px)
+{.container{min-height:350px;max-height:354px;font-size:20px;}
+.img{width:40%}
+.corner1{width:80%;margin-left:30px;margin-top:25px;}
+.corner2{width:80%;margin-left:30px;margin-top:25px;}
+.corner3{width:80%;margin-left:30px;margin-top:25px;}
+.corner4{width:80%;margin-left:30px;margin-top:25px;}
+.stu{width:70%;margin-left:15%;}}
+
+.corner1
+{
+  
+margin-left:6%;
+
+margin-up:6%;
+  border: solid 1px #555;
+  background-color: rgba(255,255,255);
+  box-shadow: 10px -10px 5px  rgba(255,165,0,0.9);
+  -moz-box-shadow: 10px -10px 5px  rgba(255,165,0,0.9);
+  -webkit-box-shadow: 10px -10px 5px  rgba(255,165,0,0.9);
+  -o-box-shadow: 10px -10px 5px  rgba(255,165,0,0.9);
+  border-radius:25px;
+
+text-align:center;
+}
+
+.corner2
+{
+  
+margin-left:6%;
+
+margin-up:6%;
+  border: solid 1px #555;
+  background-color: rgba(255,255,255);
+  box-shadow: 10px -10px 5px  rgba(255,105,180,0.9);
+  -moz-box-shadow: 10px -10px 5px  rgba(255,105,180,0.9);
+  -webkit-box-shadow: 10px -10px 5px  rgba(255,105,180,0.9);
+  -o-box-shadow: 10px -10px 5px  rgba(255,155,180,0.9);
+  border-radius:25px;
+
+text-align:center;
+}
+
+.corner3
+{
+  
+margin-left:6%;
+
+margin-up:6%;
+  border: solid 1px #555;
+  background-color: rgba(255,255,255);
+  box-shadow: 10px -10px 5px  rgba(255,0,255,0.9);
+  -moz-box-shadow: 10px -10px 5px  rgba(255,0,255,0.9);
+  -webkit-box-shadow: 10px -10px 5px  rgba(255,0,255,0.9);
+  -o-box-shadow: 10px -10px 5px  rgba(255,0,255,0.9);
+  border-radius:25px;
+
+text-align:center;
+}
+
+.corner4
+{
+  
+margin-left:6%;
+
+margin-up:6%;
+  border: solid 1px #555;
+  background-color: rgba(255,255,255);
+  box-shadow: 10px -10px 5px  rgba(0,255,0,0.9);
+  -moz-box-shadow: 10px -10px 5px  rgba(0,255,0,0.9);
+  -webkit-box-shadow: 10px -10px 5px  rgba(0,255,0,0.9);
+  -o-box-shadow: 10px -10px 5px  rgba(0,255,0,0.9);
+  border-radius:25px;
+
+text-align:center;
+}
+.text{text-align:center;}
+
+
+
+
+
+
+.hello{
+  width: 200px;
+  height: 100px;
+margin-left:20pxpx;text-align:center;font-size:20px;
+  font-weight: bold;
+  position: relative;margin-left:15px;
+  animation: mymove 10s infinite;
+clear:left;  border-radius:25px;display:inline;
+}
+
+#div1 {animation-timing-function: linear;  background-color:rgba(0,255,0,0.9);}
+#div2 {animation-timing-function: ease;  background-color:rgba(255,0,255,0.9);}
+#div3 {animation-timing-function: ease-in;  background-color:rgba(255,155,180,0.9);}
+#div4 {animation-timing-function: ease-out;  background-color:rgba(0,255,0,0.9);}
+#div5 {animation-timing-function: ease-in-out;  background-color:rgba(255,0,255,0.9);}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 30%;}
+}
+.ex{text-align:center;color:gray;margin-up:10px;}
+.stu{text-align:center;border:0.5px gray solid;margin-top:30px;}
+.i{width:80%;border:4px #ffcc13 solid;border-radius:10%;margin-top:15px;}
+footer{background-color:white;clear:left;}
+span{font-size:30px;color:#152D51;display:block;margin-bottom:10px;text-align:center;}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="HeyCalibre.html">HeyCalibre</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="HeyCalibre.html">Home</a></li>
+        
+        <li><a href="Our Mission.html">Our Mission</a></li>
+        <li><a href="programs.html"> Our programs</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+ <footer>
+
+
+<div class="img"><img  width="33%"  src="logo.jpg" /></div><p><br/></p>
+
+
+</footer>
+<div class="container">
+
+<p class="bold"> Building a more<br/>confident India...</p>
+<p class="bld">HeyCalibre is the best way</br>to master the skills you need </br>to succeed in 'LIFE'. </p>
+<a href="Our Programs.html"><button class="btn">LEARN MORE</button></a><p><br/></p>
+
+
+
+</div>
+<p></p>
+<div class="table"><p style=" text-align:center;font-size:30px;"> Only at HeyCalibre -'LIFE SKILLS'</p>
+<table >
+  <tr>
+    <th>Features</th>
+    <th>HeyCalibre</th>
+    <th>Others</th>
+  </tr>
+  <tr>
+    <td>Learn by doing</td>
+    <td>Big Yes*</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Interesting</td>
+    <td>Big Yes*</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Personalised</td>
+    <td>Big Yes*</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Peer Learning</td>
+    <td>Big Yes*</td>
+    <td>X</td>
+  </tr>
+  <tr>
+    <td>Interactive</td>
+    <td>Big Yes*</td>
+    <td>X</td>
+  </tr>
+  
+</table></div>
+
+<p></p>
+<p >
+<h1 style="text-align:center;">Embark on your journey to success</h1><br/>
+<h3 style="text-align:center;">HeyCalibre journeys provide assure results</h3>
+
+</p>
+
+
+<p><br/></p>
+
+
+<div class="corner1">
+<p class="text">
+<h1>Activity -based Learning</h1>
+<br/>
+<h3>Learn by doing activities and tasks 
+<br/>
+that lead to subject mastery.</h3>
+
+</p>
+
+
+
+</div>
+
+
+<div class="corner2">
+<p class="text">
+<h1>live Interactive Sessions</h1>
+<br/>
+<h3>Discuss with your team,learn from peers
+<br/>
+interact with the facilitators,get encouraged and learn better.</h3>
+
+</p>
+
+
+
+</div>
+
+<div class="corner3">
+<p class="text">
+<h1>Enjoy the learning process</h1>
+<br/>
+<h3>Play intresting games and quizzes,win exciting prizes
+<br/>
+and enjoy the learning process.</h3>
+
+</p>
+
+
+
+</div>
+
+
+<div class="corner4">
+<p class="text">
+<h2>Personalised</h2>
+<br/>
+<h3>We tailor our programs to your unique
+<br/>
+learning needs to help you lear better.</h3>
+
+</p>
+
+
+
+</div>
+<div class="ex">
+<p><h1><br/>affection for your efforts in making each lesson enjoyable and educational.<h2>~Our Students</h2></h1</p></div>
+
+<div class="stu">
+<img  class="i" src="Aaditya.jpg"/>
+<p><h1>Aaditya</h1><br/><h3>
+I like the games which make us have fun<br/>and also increase our skills.</h3>
+
+
+
+</div>
+<div class="stu">
+<img class="i" src="Ananya.jpg"/>
+<p><h1>Ananya</h1><br/><h3>
+the effective writing skills have helped <br/>me a lot in improving my writing skills.</h3>
+
+
+
+</div>
+
+<div class="stu">
+<img class="i" src="Trish.jpg"/>
+<p><h1>Trish's Mother</h1><br/><h3>
+It is a club where children learn to<br/>work tohether as a team.</h3>
+
+
+
+</div>
+
+<footer>
+<div class="hello"  id="div1">Best</div>
+<div class="hello"  id="div2">learning</div>
+<div class="hello"  id="div3">Interactive</div>
+<div class="hello" id="div4">result 100%</div>
+<div class="hello" id="div5">@HeyCalibre</div>
+<a href="www.facebook.com/heycalibre"><span>facebook</span></a>
+<a href="http://www.linkedin.com/company/heycalibre"><span>linkedin</span></a>
+<a href="http://instagram.com/heycalibre"><span>instagram</span></a></footer>
+<p><span>contact:+91 9459641646</span></p>
+
+
+
+
+</body>
+</html>
